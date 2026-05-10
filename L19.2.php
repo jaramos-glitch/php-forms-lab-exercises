@@ -49,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             ";
 
             $mail->send();
-            echo "<h3>Registration Successful!</h3>Message sent ✅";
+            echo "<h3>Registration Successful!</h3>Message sent!";
         } catch (Exception $e) {
             echo "Error sending message: {$mail->ErrorInfo}";
         }
